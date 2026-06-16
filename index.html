@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+
+    <title>AI English Poem Generator</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>AI English Poem Generator</h1>
+      </header>
+
+      <main>
+        <div class="form-container">
+          <form id="poem-generator-form">
+            <input
+              type="text"
+              placeholder="Enter the topic of the poem"
+              autofocus
+              required
+              autocomplete="off"
+              class="instructions"
+              id="user-instructions"
+            />
+            <input type="Submit" value="Generate Poem" class="submit-button" />
+          </form>
+          <div class="hint">i.e: Flower, Pasta, Coffee</div>
+        </div>
+        <div class="poem hidden" id="poem"></div>
+      </main>
+
+      <footer>
+        This AI English Poem Generator was coded with 💜 by
+        <a href="https://github.com/Mukovhe-Nengovhela" target="_blank">
+          Mukovhe Nengovhela</a
+        >
+        and is on
+        <a href="#" target="_blank">GitHub</a>
+        and hosted on
+        <a href="#" target="_blank">Netifiy</a>
+      </footer>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
